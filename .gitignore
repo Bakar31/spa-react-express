@@ -1,0 +1,35 @@
+# Node / General
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+.env
+.env.*
+!.env.example
+
+# OS / IDE specific
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Client (React/Vite)
+client/node_modules/
+client/dist/
+client/.env
+client/.env.*
+!client/.env.example
+
+# Server (Express/Node/Prisma)
+server/node_modules/
+server/dist/
+server/.env
+server/.env.*
+!server/.env.example
+# server/prisma/generated/ # Optional: Uncomment if Prisma client shouldn't be committed
+
+# Docker
+docker-compose.override.yml # Often used for local overrides
