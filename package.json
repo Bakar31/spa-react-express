@@ -1,0 +1,24 @@
+{
+    "name": "react-express-spa-template",
+    "version": "1.0.0",
+    "description": "Scalable React SPA with Express backend template",
+    "private": true,
+    "workspaces": [
+      "client",
+      "server"
+    ],
+    "scripts": {
+      "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+      "dev:client": "npm run dev --workspace=client",
+      "dev:server": "npm run dev --workspace=server",
+      "build": "npm run build --workspaces",
+      "start": "npm run start --workspace=server",
+      "test": "vitest run",
+      "test:watch": "vitest",
+      "lint": "npm run lint --workspaces"
+    },
+    "devDependencies": {
+      "concurrently": "^8.2.2",
+      "vitest": "^1.2.0"
+    }
+  }
